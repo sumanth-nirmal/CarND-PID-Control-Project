@@ -2,7 +2,7 @@
 
 PID controller is implemented to control the car autonmously, which is done as part of udacity self driving car engineer nano degree(https://www.udacity.com/drive).
 
-for video [check](https://youtu.be/LgYx6Z8INLM)
+for video [check](https://youtu.be/6x-siPQPnZc)
 
 ### PID Control
 PID controller is a simple reactive controller that is widely used. The basic working of PID is that the conrol output is generated in order to get the error signal as close as to zero, the error signal is basically the difference between actual value and the desired value of a control variable in a system is considerd as an error signal. the PID parameters drive how the error is driven to zero.
