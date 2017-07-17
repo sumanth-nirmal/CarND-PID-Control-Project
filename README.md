@@ -17,3 +17,13 @@ The Integrator term _(I)_ sumps up the error signal over time. which actually po
 
 #### D Controller
 The Differential term _(D)_ corresponds to the rate of change of error signal over time, This can be used to mitigate the osciallations.
+
+### Parameter Tuning
+The PID parameters are tuned manually, Started with the P controller and added D component but adding this D made the controller too osciallating and tried with different combinations of values to achive a stable run, then added the I compenent to correct for the errors over time. (for every try, I generated the graphs indicating how the control signal is behaving with respect to the actual value, these graphs shows the osciallation or overshoot or undershoot etc. which helps to decide how to change the controller gains).
+So I finally ended up with these values:
+
+| P  | I | D |
+|---|---|---|
+| 0.15  | 0.002  | 3.8  |
+
+These values can get the car around the track. But there are other robust algorithms like twiddle to tune these more finely.
