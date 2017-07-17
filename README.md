@@ -10,3 +10,10 @@ PID controller is a simple reactive controller that is widely used. The basic wo
 In this scenario, the driving [simulator](https://github.com/udacity/self-driving-car-sim) produces the error signal as the distance between the actual car position on the road and a reference trajectory. The PID controller is designed to minimize this error and the controller operates on steering angles.
 
 #### P Controller
+The proportional term _(P)_ generates the output signal proportional to the error signal. Pure _P_ is unstable and makes it to oscillate at the set point (if tuned correctly). So ideally pure _P_ can not achieve a stable set point.
+
+#### I Controller
+The Integrator term _(I)_ sumps up the error signal over time. which actually porovides the boost to the error signal to reach the set point. The I term can also create an over shoot.
+
+#### D Controller
+The Differential term _(D)_ corresponds to the rate of change of error signal over time, This can be used to mitigate the osciallations.
